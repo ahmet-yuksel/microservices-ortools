@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "92523534-9727-4dc1-bd6a-7ca53777a836",
+		"name": "Ortools MicroServices Call ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8002/calc_optimal_route",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"vehicles\": [\n    {\n      \"id\": 1,\n      \"start_index\": 0,\n      \"capacity\": [\n        4\n      ]\n    },\n    {\n      \"id\": 2,\n      \"start_index\": 1,\n      \"capacity\": [\n        6\n      ]\n    },\n    {\n      \"id\": 3,\n      \"start_index\": 2,\n      \"capacity\": [\n        6\n      ]\n    }\n  ],\n  \"jobs\": [\n    {\n      \"id\": 1,\n      \"location_index\": 3,\n      \"delivery\": [\n        2\n      ],\n      \"service\": 327\n    },\n    {\n      \"id\": 2,\n      \"location_index\": 4,\n      \"delivery\": [\n        1\n      ],\n      \"service\": 391\n    },\n    {\n      \"id\": 3,\n      \"location_index\": 5,\n      \"delivery\": [\n        1\n      ],\n      \"service\": 297\n    },\n    {\n      \"id\": 4,\n      \"location_index\": 6,\n      \"delivery\": [\n        2\n      ],\n      \"service\": 234\n    },\n    {\n      \"id\": 5,\n      \"location_index\": 7,\n      \"delivery\": [\n        1\n      ],\n      \"service\": 357\n    },\n    {\n      \"id\": 6,\n      \"location_index\": 8,\n      \"delivery\": [\n        1\n      ],\n      \"service\": 407\n    },\n    {\n      \"id\": 7,\n      \"location_index\": 9,\n      \"delivery\": [\n        1\n      ],\n      \"service\": 382\n    }\n  ],\n  \"matrix\": [\n    [\n      0,\n      516,\n      226,\n      853,\n      1008,\n      1729,\n      346,\n      1353,\n      1554,\n      827\n    ],\n    [\n      548,\n      0,\n      474,\n      1292,\n      1442,\n      2170,\n      373,\n      1801,\n      1989,\n      1068\n    ],\n    [\n      428,\n      466,\n      0,\n      1103,\n      1175,\n      1998,\n      226,\n      1561,\n      1715,\n      947\n    ],\n    [\n      663,\n      1119,\n      753,\n      0,\n      350,\n      1063,\n      901,\n      681,\n      814,\n      1111\n    ],\n    [\n      906,\n      1395,\n      1003,\n      292,\n      0,\n      822,\n      1058,\n      479,\n      600,\n      1518\n    ],\n    [\n      1488,\n      1994,\n      1591,\n      905,\n      776,\n      0,\n      1746,\n      603,\n      405,\n      1676\n    ],\n    [\n      521,\n      357,\n      226,\n      1095,\n      1167,\n      1987,\n      0,\n      1552,\n      1705,\n      1051\n    ],\n    [\n      1092,\n      1590,\n      1191,\n      609,\n      485,\n      627,\n      1353,\n      0,\n      422,\n      1583\n    ],\n    [\n      1334,\n      1843,\n      1436,\n      734,\n      609,\n      396,\n      1562,\n      421,\n      0,\n      1745\n    ],\n    [\n      858,\n      1186,\n      864,\n      1042,\n      1229,\n      1879,\n      984,\n      1525,\n      1759,\n      0\n    ]\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/calc_optimal_route",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"calc_optimal_route"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
